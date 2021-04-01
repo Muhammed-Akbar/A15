@@ -1,14 +1,15 @@
 * {
 	margin: 0;
-	padding: 0; }
-
+	padding: 0;
+}
 html {
 	background-color: white;
 }
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	width: 600px;
+	width: 800px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-right: auto;
@@ -16,6 +17,56 @@ body {
 	border: 3px solid #931420;
 	background-color: #fffded;
 
+}
+section {
+	width: 525px;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+section h1{
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
+
+
+}
+article{
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border-top: 2px solid #800000 ;
+	border-bottom: 2px solid #800000 ;
+}
+article img{
+	float: right;
+	border: 1px solid Black;
+	margin-bottom: 1em;
+
+
+}
+article h2{
+	padding-top: 0;
+}
+article h3{
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+aside{
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+
+}
+aside h3{
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+aside img{
+	padding-bottom: 1em;
 }
 ul { margin: 0 0 1.5em 1.25em; }
 
@@ -52,17 +103,6 @@ h3 {
 /* the styles for the main section */
 main {
 	clear: left;
-	padding-left: 30px;
-	padding-right: 30px;
-
-}
-main h1{
-	padding-top: 0.3em;
-	padding-bottom: 0.3em;
-	text-align: center;
-	border: 5px double #931420;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 3px 3px 4px 4px black;
 
 }
 
@@ -98,12 +138,7 @@ main ul{
 main li{
 	padding-bottom: 0.35em;
 }
-h1{
-	font-size: 150%;
-	border-top: 3px solid #931420;
-	border-bottom: 3px solid #931420;
 
-}
 h2{
 	font-size: 130%;
 	color: #800000;
@@ -122,6 +157,7 @@ footer{
 	border-top: 3px solid #931420;
 	border-bottom: 3px solid #931420;
 	background-color: #931420;
+	clear: right;
 
 }
 footer p{
