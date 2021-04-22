@@ -5,20 +5,28 @@
 html {
     background-color: white;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 850px;
+    width: 99%;
+    max-width: 960px;
     margin: 0 auto;
     border: 3px solid #800000;
     background-color: #fffded;
 }
+
+section, article, aside {
+    margin-bottom: 1em;
+}
+p{ font-size: 0.875em;}
 a:focus, a:hover {
     font-style: italic;
 }
 
 header {
     padding: 1.5em 0 2em 0;
+    width:100%;
     border-bottom: 3px solid #931420;
     background-image: -moz-linear-gradient(
             30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -31,13 +39,21 @@ header {
 }
 header h2 {
     color: #800000;
+    font-size: 2.25em;
+    margin-left: 12.12121%;
     padding-bottom: .25em;
 }
 header h3 {
+    font-size: 2.25em;
     font-style: italic;
+    margin-left: 12.12121%;
 }
 header img {
+    width: 8.0808%;
+    max-width: 80px;
+    min-width: 40px;
     float: left;
+    margin-left: 2.0202%;
     padding: 0 30px;
 }
 .shadow {
@@ -50,6 +66,7 @@ nav {
 }
 
 #nav_menu ul {
+    width:100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -87,6 +104,7 @@ nav {
 }
 
 #nav_menu ul li:hover > ul {
+    width:100%;
     display: block;
 }
 
@@ -101,7 +119,7 @@ main {
 }
 section {
     padding: 0 20px 20px 20px;
-    width: 575px;
+    width: 59.895%;
     float: right;
 }
 section h1 {
@@ -114,16 +132,19 @@ section h2 {
     font-size: 120%;
     padding-bottom: .25em;
 }
+
 article p {
     padding-bottom: .5em;
 }
 article img {
     float: right;
+    min-width:150px;
+    max-width:40%;
     margin: .25em 0 1em 1em;
     border: 1px solid black;
 }
 aside {
-    width: 215px;
+    width: 22.395%;
     float: left;
     padding: 0 0 20px 20px;
 }
@@ -148,4 +169,36 @@ footer p {
     text-align: center;
     color: white;
     padding: 1em 0;
+}
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 959px) {
+    #nav_menu ul li a { font-size: .875em; }
+    section h1, article h1 { font-size: 1.5em; }
+    section h2, aside h2 { font-size: 1.125em;}
+}
+
+@media only screen and (max-width: 959px) {
+    #nav_menu { display:none;}
+    #mobile_menu {display: block; }
+    .slicknav_menu {background-color: #800000 !important; }
+    body {
+        width: 100%;
+        margin: 0;
+        border: 3px solid #800000;
+    }
+    header, footer p { text-align: center; }
+    footer p { margin-right: 0; }
+    header h2 {
+        font-size: 1.625em;
+        margin: 0.4em 0 0.25em 0;
+    }
+    header h3 {
+        font-size: 1em;
+        margin-left: 0;
+    }
+    header img { float: none; }
+
 }
